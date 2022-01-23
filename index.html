@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce di vendita</title>
+
+     <script src="https://kit.fontawesome.com/6a3f84b261.js" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+<body>
+    <header class="container-fluid bg-dark position-sticky top-0">
+        <ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist">
+            <a class="navbar-brand" href="#">
+    <img src="img/logochacarero.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    <span id="chacarero">CHACARERO</span> 
+  </a>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
+                    role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-whoareyou-tab" data-bs-toggle="pill" data-bs-target="#pills-whoareyou"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Chi siamo</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Productos</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Carrello <i class="fas fa-shopping-cart"></i> </a>
+            </li>
+        </ul>
+    </header>
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+        Prodotto aggiunto al carrello! 
+    </div>
+    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+        Prodotto rimosso!
+    </div>
+    <!--sono i div del contenuto-->
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade text-white" id="pills-home" role="tabpanel" aria-labelledby="pills-whoareyou-tab">120
+        </div>
+        <div class="tab-pane fade text-white text-center" id="pills-whoareyou" role="tabpanel"
+            aria-labelledby="pills-home-tab">
+            <p id="chisiamo"> Chacarero nasce nel 1992 nel centro storico di Modena e ad oggi è presente anche a Reggio
+                Emilia, Parma e Verona.
+
+
+
+                Con il termine "Chacarero" si fa riferimento alla figura del contadino (Chacarero), colui che lavora la
+                terra e che dopo una lunga e dura giornata di lavoro nei campi adora dedicare il suo tempo agli amici
+                mangiando insieme la carne scelta direttamente nel proprio allevamento.
+
+
+
+                I proprietari, originari del Cile, sono approdati in Italia più di 26 anni fa seguendo l’esempio dei
+                loro antenati. Una delle caratteristiche peculiari della famiglia è proprio il coraggio di lasciare la
+                propria patria per avviare una nuova avventura.
+
+
+
+                Il punto di forza del ristorante è la carne, proveniente dai migliori produttori del Mondo; si parte
+                dall’Argentina ma anche da Uruguay, Nuova Zelanda, America e tante altre provenienze d’eccellenza.
+
+                Ma chi come noi ama la carne sa che l’origine non basta.
+
+                Ciò che contraddistingue la carne del nostro ristorante è il tempo di cottura, è proprio lì che emerge
+                il sapore e la morbidezza che fa innamorare i nostri clienti. La nostra tecnica di adagiarla sulla
+                griglia senza schiacciarla, evitando che si secchi, le dona quella bontà e morbidezza che nessuno riesce
+                a copiarci. Certo anche la preparazione non viene lasciata al caso infatti trattiamo la nostra carne
+                solo con metodi naturali.
+
+                La nostra terra è celebre nel mondo anche per la produzione vitivinicola. Noi mettiamo in tavola vino
+                proveniente dal nostro Sudamerica, in particolar modo dal Cile, come Cabernet Sauvignon e Carmenere,
+                oltre a vini Argentini come Malbec e vini di produzione mondiale.
+
+                Tutti i nostri prodotti sono selezionati attentamente con l'obiettivo di offrire sempre ai nostri
+                clienti qualità e freschezza.
+
+
+
+                Cosa ci differenzia dagli altri?
+
+                L’ambientazione! Chi entra in un nostro locale viene immerso nel gusto, la simpatia, l’allegria e il
+                colore di una cantina sudamericana, in un attimo abbandona la propria routine e si sente avvolto
+                dall’America Latina.
+
+                Ti faremo vivere un viaggio nel Sud America attraverso i cocktail tropicali, la carne alla parrilla, la
+                Paella e tanto altro, tutto cucinato al momento!
+
+
+
+                Te esperamos! </p>
+        </div>
+        <div class="tab-pane fade show active container" id="pills-profile" role="tabpanel"
+            aria-labelledby="pills-profile-tab">
+            <h2 class="h4 m-4 text-primary">Productos</h2>
+            <!--la riga 38 ho definito il suo comportamento-->
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                <div class="col d flex justify-content-center-mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Card title</h5>
+                        <img src="img/platillo1.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body  ">
+                            <p class="card-text text-white-50 description">Some quick example text to build on the card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">aggiungere a carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Card title1</h5>
+                        <img src="img/platillo2.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body  ">
+                            <p class="card-text text-white-50 description">Some quick example text to build on the card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">aggiungere a carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Card title2</h5>
+                        <img src="img/platillo3.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body  ">
+                            <p class="card-text text-white-50 description">Some quick example text to build on the card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">aggiungere a carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Card title3</h5>
+                        <img src="img/platillo4.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body  ">
+                            <p class="card-text text-white-50 description">Some quick example text to build on the card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">aggiungere a carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d flex justify-content-center mb-10">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Card title4</h5>
+                        <img src="img/platillo5.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body  ">
+                            <p class="card-text text-white-50 description">Some quick example text to build on the card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">aggiungere a carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade carrito" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+            <br>
+            <table class="table table-dark table-hover">
+                <thead>
+                    <tr class="text-primary">
+                        <th scope="col">#</th>
+                        <th scope="col">Productos</th>
+                        <th scope="col">precio</th>
+                        <th scope="col">Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+
+
+                </tbody>
+            </table>
+            <div class="row mx-4">
+                <div class="col">
+                    <h3 class="itemCartTotal text-white">total: 0 </h3>
+                </div>
+                <div class="col d-flex justify-content-end">
+                    <button class="btn btn-success">COMPRAR</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+       
+        <footer class="bg-dark text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-3 m-0 text-muted" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2021 Copyright:
+                <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+        <!--Jquery-->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+</body>
+
+</html>

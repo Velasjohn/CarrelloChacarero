@@ -1,0 +1,58 @@
+body{
+    background-color: #110f0fea;
+}
+header, .alert{
+/*z index mi dice che è sopra agli altri*/
+    z-index: 100;
+}
+.description{
+    height: 25px;
+    /*over flow mi toglie il testo in piu nascondendolo*/
+    overflow: hidden;
+    transition: height .3s ease-in .3s;
+}
+.description:hover{
+    height:80px;
+}
+.carrito{
+    min-height: 80vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.table_productos{
+    display: flex;
+}
+.table_productos > img{
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right:20px ;
+}
+
+.table_cantidad > input{
+width: 40px;
+border: none;
+outline: 0;
+font-size: 16px;
+font-weight: 700;
+margin-right: 30px;
+margin-bottom: 20px;
+}
+
+#chisiamo{
+
+
+    width: 80%;
+
+    margin: auto;
+}
+
+.hide, .remove{
+    display: none;
+}
+
+#chacarero{
+    font-family: fantasy;
+}

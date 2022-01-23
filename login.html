@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Corso Web Developer di Epicode School" />
+
+    <!-- TITOLO -->
+    <title>Esercitazione Team 1</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/login.css" />
+
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/additional-methods.min.js"></script>
+
+    <!-- Script js -->
+    <script type="text/javascript" src="js/login.js"></script>
+  </head>
+
+  <body>
+    <section id="contenitoremain">
+      <div
+        class="
+          w-100
+          d-flex
+          flex-align-column
+          justify-content-center
+          align-items-center
+          container
+        "
+      >
+        <div
+          id="login"
+          class="
+            w-50
+            mt-5
+            d-flex
+            flex-align-column
+            justify-content-center
+            align-items-center
+          "
+        >
+          <div id="container">
+            <div class="form-outline mb-4">
+              <p>Nome Utente</p>
+              <input
+                type="text"
+                id="utente"
+                class="form-control form-control-lg"
+                name="Nome Utente"
+              />
+            </div>
+
+            <div class="form-outline mb-4">
+              <p>Password</p>
+              <input
+                type="password"
+                id="passw"
+                class="form-control form-control-lg"
+                name="Password"
+              />
+            </div>
+            <p id="spazioerror">&nbsp;</p>
+            <br />
+            <!-- Progress Bar -->
+            <div class="slide-progress-bar d-flex flex-align-row">
+              <div class="progress-bar" id="progress-bar"></div>
+              <!--progress-bar-->
+            </div>
+            <!--slide-progress-bar-->
+
+            <div id="container-count">
+              <span><b>Countdown:</b> </span>
+              <span id="countdown"> 10</span>
+            </div>
+            <button type="button" id="bottone" class="btn btn-success">
+              ENTRA
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="seconda-parte">
+      <div class="container text-center border border-2 border-success">
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <h2></h2>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <div class="slide-progress-bar">
+          <div id="progress-bar2" class="progress-bar"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script js -->
+    <script type="text/javascript" src="js/login.js"></script>
+  </body>
+</html>

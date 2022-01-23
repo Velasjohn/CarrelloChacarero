@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css2?family=Comic+Neue:wght@100;200;300;400;500;600;700&display=swap);
+body {
+  font-family: 'Comic Neue', handwriting;
+  font-size: 16.5px;
+  background-image: url();
+}
+
+.slide-progress-bar {
+  width: 1118px;
+  height: 30px;
+  transition: width 10s linear;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.progress-bar {
+  height: 20px;
+  width: 0;
+  background-color: red;
+  position: relative;
+  transition: linear;
+}
+
+.progress-bar2 {
+  height: 20px;
+  width: 0;
+  background-color: red;
+  position: relative;
+  transition: linear;
+}
+
+#container-count{
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+#seconda-parte{
+  display:none;
+}
+
+
+/* Seconda pagina */
+
+.nav-link:hover {
+  color: brown !important;
+  font-weight: 500;
+}
+
+#main2 {
+  cursor: pointer;  
+}
+
+#bg-body {
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+}
+
+small {
+  color: brown;
+  font-weight: 600;
+}
